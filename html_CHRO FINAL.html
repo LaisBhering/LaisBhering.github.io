@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insper - Curso CHRO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0e1112;
+      color: white;
+    }
+
+    a {
+      color: #00d084;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      background: url('https://www.oracle.com/a/ocom/img/social-og-bsa-what-is-chro-1200x628.jpg') center center / cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1 1 50%;
+      max-width: 600px;
+    }
+
+    .hero-text img {
+      max-width: 160px;
+      margin-bottom: 30px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      line-height: 1.3;
+      color: #00d084;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .form-box {
+      background-color: white;
+      color: black;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 400px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .form-box h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .form-box input,
+    .form-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: #f9f9f9;
+      font-size: 14px;
+    }
+
+    .form-box input:focus {
+      border-color: #00d084;
+      outline: none;
+    }
+
+    .form-box button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 14px;
+      background-color: #e50914;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .form-box button:hover {
+      background-color: #cc0812;
+    }
+
+    .form-note {
+      font-size: 12px;
+      color: gray;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      color: #00d084;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .benefit, .bullet {
+      background-color: #1a1e1f;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: left;
+    }
+
+    .benefit p:first-child {
+      font-weight: bold;
+      color: #00d084;
+      margin-bottom: 10px;
+    }
+
+    .logos {
+      background-color: #00d084;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .logos img {
+      height: 30px;
+    }
+
+    footer {
+      background-color: #0e1112;
+      color: #999;
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-columns div {
+      max-width: 220px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      .hero-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-text,
+      .form-box {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero com formulário -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <img src="https://ee.insper.edu.br/wp-content/uploads/sites/2/2024/10/insper-ee-logo.png" alt="Insper Logo">
+        <h1>Lidere o futuro do RH nas organizações com o curso CHRO - Chief Human Resources Officer do Insper.</h1>
+        <p>Transforme sua atuação em Recursos Humanos com a instituição mais completa do Brasil e influencie decisões na Alta Gestão.</p>
+      </div>
+      <div class="form-box">
+        <h3>Torne-se o CHRO que influencia, decide e transforma com a educação executiva do Insper</h3>
+        <form>
+          <script type="text/javascript" src="https://insper.persone.com.br/form/generate.js?id=3"></script>
+        </form>
+        <p class="form-note">Comece sua transformação agora.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="section">
+    <h2>Benefícios e diferenciais do curso CHRO</h2>
+    <div class="grid grid-2">
+      <div class="benefit">
+        <p>Liderança em RH</p>
+        <p>Para CHROs visionários e influentes no comitê executivo.</p>
+      </div>
+      <div class="benefit">
+        <p>Gestão estratégica de pessoas</p>
+        <p>Aprenda metodologias para construir equipes de alta performance.</p>
+      </div>
+      <div class="benefit">
+        <p>RH Estratégico na Prática</p>
+        <p>Otimize processos, retenha talentos e impulsione o crescimento.</p>
+      </div>
+      <div class="benefit">
+        <p>Networking de Alto Nível</p>
+        <p>Conecte-se com CHROs, CPOs e VPs de RH.</p>
+      </div>
+      <div class="benefit">
+        <p>Conhecimento Acadêmico + Prático</p>
+        <p>Teoria de ponta aliada à experiência de mercado.</p>
+      </div>
+      <div class="benefit">
+        <p>Certificação Insper</p>
+        <p>Instituição com certificação Triple Crown e Top of Mind RH.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Público-alvo -->
+  <section class="section">
+    <h2>Este curso é para você que:</h2>
+    <div class="grid grid-2">
+      <div class="bullet">➤ Ocupa posição como CHRO, CPO ou VP de RH;</div>
+      <div class="bullet">➤ Atua como parceiro estratégico da alta liderança;</div>
+      <div class="bullet">➤ Deseja ampliar sua influência organizacional;</div>
+      <div class="bullet">➤ Interage com o comitê executivo e quer evoluir.</div>
+    </div>
+  </section>
+
+  <!-- Conteúdo do curso -->
+  <section class="section">
+    <h2>No curso CHRO, você vai aprender:</h2>
+    <div class="grid grid-2">
+      <div class="bullet">• Estratégia organizacional e cultural</div>
+      <div class="bullet">• Liderança em RH e gestão de mudanças</div>
+      <div class="bullet">• KPIs e métricas aplicadas à gestão de pessoas</div>
+      <div class="bullet">• Influência política e tomada de decisão</div>
+      <div class="bullet">• Sustentabilidade, ESG e diversidade</div>
+    </div> <!-- Fechando os bullets -->
+
+    <div style="margin: 60px auto 100px auto; text-align: center;">
+      <button style="
+        padding: 14px 28px;
+        background-color: #e50914;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      " onclick="document.querySelector('.form-box').scrollIntoView({behavior: 'smooth'})">
+        Inscreva-se agora
+      </button>
+    </div>
+  </section>
+  
+  <!-- Logos -->
+  <section class="logos">
+    <img src="https://images.squarespace-cdn.com/content/v1/59da41e812abd90496354589/1507567588511-1525YZDN54YTTBNG60H1/aacsb-accreditation-seal-5-HR.png" alt="AACSB" />
+    <img src="https://www.bsm.upf.edu/_next/image?url=/images/timeline/timeline6.png&w=3840&q=75" alt="Logo BSM" />
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/EQUIS_logo.svg/1200px-EQUIS_logo.svg.png" alt="EQUIS" />
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-columns">
+      <div>Rua Quatá, 300 - Vila Olímpia<br>CEP 04546-042 São Paulo/SP</div>
+      <div>Informações:<br>11 3164-6702<br>candidato@insper.edu.br</div>
+      <div>Campus aberto:<br>Seg a sex: 7h às 23h<br>Sáb: 7h às 17h</div>
+      <div>Educação Executiva:<br>Seg a sex: 9h às 21h<br>Sáb: 10h às 16h</div>
+    </div>
+    <div class="footer-bottom">© 2025 Insper Educação Executiva. Todos os direitos reservados.</div>
+  </footer>
+</body>
+</html>
